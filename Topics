@@ -204,3 +204,61 @@ while counter < 10: # giving the condition
 
 Functions
 ===========
+Function Arguments
+==================
+Default arguments
+Keyword arguments 
+Required arguments or positional arguments
+Variable-length arguments:
+We can involve unique characters in Python capabilities to pass many contentions. However, we need a capability. This can be accomplished with one of two types of characters:
+
+args" and "kwargs" refer to arguments not based on keywords.
+def keyword is used to define function
+#varray demo
+def sum(*args):
+  for x in args:
+     print(x);
+  
+print(sum("1","apple","1","20","3","4","5",100))
+
+#**kwargs
+ def display(**kwargs):
+    for key,value in kwargs.items():
+        print(key)
+        print(value);
+
+display(name="manisha",age=33,sal=12323.55,loc="Pune")
+       
+
+2 errors:
+1. indentation error
+2. positional argu error
+print ("hello")
+from python 3 () are started 
+print hello---ok till python 2
+
+Anonymous function:
+----------------------
+1. function dont have name
+2. created by using keyword lamda
+3. takes any no of aru and can return value
+
+'''def display(**kwargs):
+    for key,value in kwargs.items():
+        print(key)
+        print(value);
+
+display(name="manisha",age=33,sal=12323.55,loc="Pune")
+def add(a,b=10):
+    print(a+b);'''
+
+
+cube=lambda a:a*a*a
+print(cube(3))
+
+square=lambda a,b:a+b ;print ('ass')
+print(square(2,3))
+
+hello=lambda :print ('helloooo')
+hello()
+
