@@ -1,0 +1,205 @@
+Day 1:
+Editors 
+spider,pycharm,jupiter,VS, online compiler --basics
+core lang is python no more c
+vaiable:
+========
+Python does not bind us to declare a variable before using it in the application. It allows us to create a variable at the required time.
+
+We don't need to declare explicitly variable in Python. When we assign any value to the variable, that variable is declared automatically.
+
+The equal (=) operator is used to assign value to a variable.
+Types of Variable
+local
+global:A variable declared outside the function is the global variable by default. Python provides the global keyword to use global variable inside the function. If we don't use the global keyword, the function treats it as a local variable. Let's understand the following example.
+
+Object Identity
+===============
+In Python, every created object identifies uniquely in Python.The built-in id() function, is used to identify the object identifier. Consider the following example.
+
+The multi-word keywords can be created by the following method.
+Camel Case ---helloWorld()
+Pascal Case ---HelloWorld()
+Snake Case ---hello_world()
+
+Comments
+========
+#-->single line
+In Python, we may use hashtags (#) multiple times to construct multiple lines of comments.
+'''--multiple line commanet
+Python Data Type
+================
+String 
+name="hello"
+multi line string 
+text1='hello\    
+user'   
+or
+
+str2=''''welcome  
+to  
+SSSIT'''    
+print str2   
+print(text1)  
+
+int 
+a=100;
+
+Complex Data Type
+-------------------
+List:[]
+======
+A list in Python is used to store the sequence of various types of data. A list can be defined as a collection of values or items of different types. Python lists are mutable type which implies that we may modify its element after it has been formed. The items in the list are separated with the comma (,) and enclosed with the square brackets [].
+
+
+Characteristics of Lists
+The list has the following characteristics:
+
+The lists are ordered.
+The element of the list can access by index.
+The lists are the mutable type.
+The lists are mutable types.
+A list can store the number of various elements.
+
+a=[1,2,3,4]
+b=[1,"apple",3.3]
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+sublist
+--------
+ist_varible(start:stop:step)    
+
+Python provides the following built-in functions, which can be used with the lists.
+
+len()
+max()
+min()
+Tuple:
+-------
+Features of Python Tuple()
+Tuples are an immutable data type, meaning their elements cannot be changed after they are generated.
+Each element in a tuple has a specific order that will never change because tuples are ordered sequences.
+indexing is used to access the element
+
+A tuple's parts can't be modified, as was recently said. We are unable to eliminate or remove tuple components as a result.
+t1=(1,2,3)   
+print(t1*3)
+
+
+Count () Method
+Index() Method:
+
+Set:{}
+-----
+A Python set is the collection of the unordered items. Each element in the set must be unique, immutable, and the sets remove the duplicate elements. Sets are mutable which means we can modify it after its creation.
+
+add()
+t1.add(100)
+update()
+t1.update(1,3,4)
+
+Python provides the discard() method and remove() method which can be used to remove the items from the set. The difference between these function, using discard() function if the item does not exist in the set then the set remain unchanged whereas remove() method will through an error.
+
+
+
+Unlike other collections in Python, there is no index attached to the elements of the set, i.e., we cannot directly access any element of the set by the index. However, we can print them all together, or we can get the list of elements by looping through the set.
+The set can be created by enclosing the comma-separated immutable items with the curly braces {}. Python also provides the set() method, which can be used to create the set by the passed 
+sequence.
+
+Dictionary {key:value,key:value}:
+-----------
+The data is stored as key-value pairs using a Python dictionary.
+This data structure is mutable
+The components of dictionary were made using keys and values.
+Keys must only have one component.
+Values can be of any type, including integer, list, and tuple.
+Python provides the built-in function dict() method which is also used to create the dictionary.
+
+The empty curly braces {} is used to create empty dictionary.
+
+check for Numpi
+Functions in python
+built in function 
+print '' or ""
+type() --- print the class 
+id()
+
+Day 2:
+=======
+a = int (input("Enter a: "));    
+b = int (input("Enter b: "));    
+c = int (input("Enter c: "));    
+if a>b and a>c:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given a is largest");    
+if b>a and b>c:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given b is largest");    
+if c>a and c>b:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given c is largest"); 
+
+age = int (input("Enter your age: "))    
+# Here, we are taking an integer num and taking input dynamically  
+if age>=18:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("You are eligible to vote !!");    
+else:    
+    print("Sorry! you have to wait !!");    
+
+if number==10:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equals to 10")    
+elif number==50:  
+# Here, we are checking the condition. If the condition is true, we will enter the block    
+    print("The given number is equal to 50");    
+elif number==100:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equal to 100");    
+else:    
+    print("The given number is not equal to 10, 50 or 100");  
+
+numbers = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]  
+for value in numbers:  
+    square = value ** 2  
+    squares.append(square)  
+print("The list of squares is", squares)  
+
+tuple_ = (3, 4, 6, 8, 9, 2, 3, 8, 9, 7)  
+  
+# Initiating the loop  
+for value in tuple_:  
+    if value % 2 != 0:  
+        print(value)  
+# giving an else statement  
+else:  
+    print("These are the odd numbers present in the tuple")   
+
+tuple_ = ("Python", "Loops", "Sequence", "Condition", "Range")  
+  
+# iterating over tuple_ using range() function  
+for iterator in range(len(tuple_)):  
+    print(tuple_[iterator].upper()) 
+
+
+'''l1=[1,2,3,4]
+for x in range(len(l1)):
+    l1[x]=l1[x]*2
+    print(x+"="+l1[x]);
+print(l1)'''
+
+for i in range(1,4):
+    print("i=%d" %i)
+    for j in range(1,4):
+        print("j=%d"%j);
+
+counter = 0  
+# Initiating the loop  
+while counter < 10: # giving the condition  
+    counter = counter + 3  
+    print("Python Loops")       
+
+Functions
+===========
