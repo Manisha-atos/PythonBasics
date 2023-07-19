@@ -262,3 +262,36 @@ print(square(2,3))
 hello=lambda :print ('helloooo')
 hello()
 
+Day 3
+=====
+statistics modules:
+random modules:
+import random
+print(random.random())
+print(random.randint(5,6))
+print(random.randint(6,15))
+time modules:
+
+import time
+print(time.time())
+print(time.ctime())
+
+datetime modules:
+import datetime
+print(datetime.datetime.now())
+print(datetime.datetime(2022,3,9))
+
+math nodules:
+
+calendar modules:
+import calendar
+print(calendar.prcal(2023))
+print(calendar.isleap(2023))
+print(calendar.monthcalendar(2023,7))
+print(calendar.prmonth(2023,7))
+
+csv module:
+
+
+
+
