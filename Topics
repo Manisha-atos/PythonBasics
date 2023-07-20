@@ -292,6 +292,150 @@ print(calendar.prmonth(2023,7))
 
 csv module:
 
+Day 4:
+pandas to read from excel
+Error in Python can be of two types i.e. Syntax errors and Exceptions. Errors are problems in a program due to which the program will stop the execution. On the other hand, exceptions are raised when some internal events occur which change the normal flow of the program. 
+
+SyntaxError: This exception is raised when the interpreter encounters a syntax error in the code, such as a misspelled keyword, a missing colon, or an unbalanced parenthesis.
+
+TypeError: This exception is raised when an operation or function is applied to an object of the wrong type, such as adding a string to an integer.
+
+NameError: This exception is raised when a variable or function name is not found in the current scope.
+
+IndexError: This exception is raised when an index is out of range for a list, tuple, or other sequence types.
+
+KeyError: This exception is raised when a key is not found in a dictionary.
+
+ValueError: This exception is raised when a function or method is called with an invalid argument or input, such as trying to convert a string to an integer when the string does not represent a valid integer.
+
+AttributeError: This exception is raised when an attribute or method is not found on an object, such as trying to access a non-existent attribute of a class instance.
+
+IOError: This exception is raised when an I/O operation, such as reading or writing a file, fails due to an input/output error.
+
+ZeroDivisionError: This exception is raised when an attempt is made to divide a number by zero.
+
+ImportError: This exception is raised when an import statement fails to find or load a module.
+
+Syntax Error:
+=============
+string = "Python Exceptions"  
+  
+for s in string:  
+    if (s != o:  
+        print( s 
+
+Exceptions: 
+===========
+are raised when the program is syntactically correct, but the code results in an error. This error does not stop the execution of the program, however, it changes the normal flow of the program.
+
+l1=[1,2,3]
+    for x in range(len(l1)+1):
+        print(l1[x]);
+
+print(4/0)
+
+TypeError: This exception is raised when an operation or function is applied to an object of the wrong type. Here’s an example:
+x = 5
+y = "hello"
+z = x + y  
+
+
+x = 5
+y = "hello"
+try:
+    z = x + y
+except TypeError:
+    print("Error: cannot add an int and a str") 
+
+
+a = [1, 2, 3]
+try:
+    print ("Second element = %d" %(a[1]))
+ 
+    # Throws error since there are only 3 elements in array
+    print ("Fourth element = %d" %(a[3]))
+ 
+except:
+    print ("An error occurred")
+
+def fun(a):
+    if a < 4:
+ 
+        # throws ZeroDivisionError for a = 3
+        b = a/(a-3)
+ 
+    # throws NameError if a >= 4
+    print("Value of b = ", b)
+     
+try:
+    fun(3)
+    fun(5)
+ 
+# note that braces () are necessary here for
+# multiple exceptions
+except ZeroDivisionError:
+    print("ZeroDivisionError Occurred and Handled")
+except NameError:
+    print("NameError Occurred and Handled")
+
+or Python 2.6 and later and Python 3.x:
+
+except Exception as e: print(e)
+For Python 2.5 and earlier, use:
+
+except Exception,e: print str(e)
+
+Try with Else Clause
+In Python, you can also use the else clause on the try-except block which must be present after all the except clauses. The code enters the else block only if the try clause does not raise an exception.
+def AbyB(a , b):
+    try:
+        c = ((a+b) / (a-b))
+    except ZeroDivisionError:
+        print ("a/b result in 0")
+    else:
+        print (c)
+ 
+# Driver program to test above function
+AbyB(2.0, 3.0)
+AbyB(3.0, 3.0)
+
+Finally Keyword in Python
+Python provides a keyword finally, which is always executed after the try and except blocks. The final block always executes after the normal termination of the try block or after the try block terminates due to some exception.
+try:
+    k = 5//0  # raises divide by zero exception.
+    print(k)
+ 
+# handles zerodivision exception
+except ZeroDivisionError:
+    print("Can't divide by zero")
+ 
+finally:
+    # this block is always executed
+    # regardless of exception generation.
+    print('This is always executed')
+
+Multiple Exception Handling in Python
+
+try:
+    client_obj.get_url(url)
+except (URLError, ValueError, SocketTimeout):
+    client_obj.remove_url(url)
+
+Comprehension in python:
+In Python, comprehension is a concise and powerful syntax for creating new sequences (such as lists, sets, or dictionaries) based on existing sequences. 
+
+List Comprehension:
+Person = ["Piyali", "Hiya", "Rudrashish", "Badsha", "Lipi"]  
+newlist = [x for x in Person if "i" in x]  
+print(newlist)  
+
+numbers = [3, 5, 1, 7, 3, 9]  
+  
+num = [n**2 for n in numbers]  
+  
+print(num)  
+Set Comprehension:
+Dictionary Comprehension:
 
 
 
