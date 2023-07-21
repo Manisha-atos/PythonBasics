@@ -437,5 +437,128 @@ print(num)
 Set Comprehension:
 Dictionary Comprehension:
 
+Day 5:
+OOPS
+The self-parameter refers to the current instance of the class and accesses the class variables. We can use anything instead of self, but it must be the first parameter of any function which belongs to the class.
+
+_ _init_ _ method
+In order to make an instance of a class in Python, a specific function called __init__ is called. Although it is used to set the object's attributes, it is often referred to as a constructor.
+
+Inheritance
+class class1:  
+    <class-suite>   
+class class2(class1):  
+    <class suite>  
+class class3(class2):  
+    <class suite>  
+
+multiple inheritance:
+class Derived(Base1, Base2, ...... BaseN):  
+    <class-suite> 
+Method overloadding:
+https://www.geeksforgeeks.org/python-method-overloading/
+
+Method Overriding:
+
+
+Data hiding__
+lass Employee:
+    #unable to use def and para constructor
+    name='';
+    __age=0;
+
+    def __init__(self):
+        Employee.name='manisha kiran'
+        Employee.age=33;
+        print('def constructor');  
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print("hello");      
+    
+    '''def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print("hello");
+e1=Employee('manisha',33)
+e1.display()'''
+e2=Employee()
+e2.display()
+print(e2.__age)
+
+Abstract class:
+A class that consists of one or more abstract method is called the abstract class. Abstract methods do not contain their implementation. Abstract class can be inherited by the subclass and abstract method gets its definition in the subclass. Abstraction classes are meant to be the blueprint of the other class. An abstract class can be useful when we are designing large functions. An abstract class is also helpful to provide the standard interface for different implementations of components. Python provides the abc module to use the abstraction in the Python program. Let's see the following syntax.
+
+unlike the other high-level language, Python doesn't provide the abstract class itself. We need to import the abc module, which provides the base for defining Abstract Base classes (ABC). The ABC works by decorating methods of the base class as abstract. It registers concrete classes as the implementation of the abstract base. We use the @abstractmethod decorator to define an abstract method or if we don't provide the definition to the method, it automatically becomes the abstract method. Let's understand the following example.
+
+An Abstract class can contain the both method normal and abstract method.
+An Abstract cannot be instantiated; we cannot create objects for the abstract class.
+child class need to override all abstract methods of abstract class
+https://www.geeksforgeeks.org/abstract-classes-in-python/
+
+String  handling
+================
+lower(): Converts all uppercase characters in a string into lowercase
+upper(): Converts all lowercase characters in a string into uppercase
+title(): Convert string to title case
+swapcase(): Swap the cases of all characters in a string
+capitalize(): Convert the first character of a string to uppercase
+
+Function Name 	Description
+capitalize()	Converts the first character of the string to a capital (uppercase) letter
+casefold()	Implements caseless string matching
+center()	Pad the string with the specified character.
+count()	Returns the number of occurrences of a substring in the string.
+encode()	Encodes strings with the specified encoded scheme
+endswith()	Returns “True” if a string ends with the given suffix
+expandtabs()	Specifies the amount of space to be substituted with the “\t” symbol in the string
+find()		Returns the lowest index of the substring if it is found
+format()	Formats the string for printing it to console
+format_map()	Formats specified values in a string using a dictionary
+index()	Returns the position of the first occurrence of a substring in a string
+isalnum()	Checks whether all the characters in a given string is alphanumeric or not
+isalpha()	Returns “True” if all characters in the string are alphabets
+isdecimal()	Returns true if all characters in a string are decimal
+isdigit()	Returns “True” if all characters in the string are digits
+isidentifier()	Check whether a string is a valid identifier or not
+islower()	Checks if all characters in the string are lowercase
+isnumeric()	Returns “True” if all characters in the string are numeric characters
+isprintable()	Returns “True” if all characters in the string are printable or the string is empty
+isspace()	Returns “True” if all characters in the string are whitespace characters
+istitle()	Returns “True” if the string is a title cased string
+isupper()	Checks if all characters in the string are uppercase
+join()	Returns a concatenated String
+ljust()	Left aligns the string according to the width specified
+lower()	Converts all uppercase characters in a string into lowercase
+lstrip()	Returns the string with leading characters removed
+maketrans()	 Returns a translation table
+partition()	Splits the string at the first occurrence of the separator 
+replace()	Replaces all occurrences of a substring with another substring
+rfind()	Returns the highest index of the substring
+rindex()	Returns the highest index of the substring inside the string
+rjust()	Right aligns the string according to the width specified
+rpartition()	Split the given string into three parts
+rsplit()	Split the string from the right by the specified separator
+rstrip()	Removes trailing characters
+splitlines()	Split the lines at line boundaries
+startswith()	Returns “True” if a string starts with the given prefix
+strip()	Returns the string with both leading and trailing characters
+swapcase()	Converts all uppercase characters to lowercase and vice versa
+title()	Convert string to title case
+translate()	Modify string according to given translation mappings
+upper()	Converts all lowercase characters in a string into uppercase
+zfill()	Returns a copy of the string with ‘0’ characters padded to the left side of the string
+
+https://www.geeksforgeeks.org/python-string-methods/
+https://www.bing.com/search?pglt=41&q=string+comparison+in+python&cvid=1271a34e559b41b19c7a9720a175ddb3&aqs=edge.0.0l9j69i11004.9806j0j1&FORM=ANNAB1&PC=U531
+
+
+
+
+
+
 
 
