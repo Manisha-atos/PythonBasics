@@ -1,0 +1,75 @@
+import mysql.connector as sql
+connection = sql.connect(host="localhost",user="root",password="root",database='student')
+print(connection)
+cursor  = connection.cursor()
+#cursor.execute("create database payments")
+'''
+cursor.execute("show databases")
+for x in cursor:
+   print(x)
+'''
+#cursor.execute("create table employee(eid int,ename varchar(20),salary float)")
+'''
+query="insert into employee values(1,'Prasad',590000)"
+cursor.execute(query)
+connection.commit()
+
+
+a=int(input("enter eid"))
+b=input("enter name")
+c=float(input("enter salary"))
+query="insert into employee values(%d,'%s',%f)" % (a,b,c)
+cursor.execute(query)
+connection.commit()
+
+
+'''
+'''
+query="select * from employee"
+cursor.execute(query)
+for i in cursor.fetchone():
+    print(i)
+'''
+'''
+sql = "INSERT INTO employee (eid, ename,salary) VALUES (%s, %s,%s)"
+val = [
+  (11,'Ajay',34000),
+  (12,'Kumar',45000),
+  (13,'Bharat',78000),
+  (14,'Singh',600000),
+  (15,'Santosh',98000)
+  
+]
+cursor.executemany(sql, val)
+connection.commit()
+'''
+'''
+
+  
+query = "delete from employee where eid=15"
+cursor.execute(query)
+connection.commit()
+'''
+'''
+query = "update employee set ename='Deepak' where eid=11"
+cursor.execute(query)
+connection.commit()
+'''
+'''
+query ="select * from employee"
+cursor.execute(query)
+for i in cursor.fetchall():
+    print(i)
+'''
+'''
+query = "drop table employee"
+cursor.execute(query)
+'''
+'''
+query="drop database payments"
+cursor.execute(query)
+
+'''
+'''
+for dropping database remove database parameter in the sql.connect()
+'''
